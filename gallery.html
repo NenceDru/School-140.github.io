@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея | Клуб ЮИД Школы №140</title>
+    <style>
+        /* Общие стили (как в index.html) */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #1b5e20;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            margin-bottom: 60px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .file-container {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            width: 100%;
+            position: fixed;
+        }
+        .file {
+            background-color: #35a73b;
+            width: 400px;
+            height: 190px;
+            display: grid;
+            grid-template-rows: 2fr 1fr 1fr;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .file img {
+            width: 120px;
+            display: flex;
+            justify-content: center;
+            height: 120px;
+        }
+        .file a {
+            font-size: 25px;
+            color: aliceblue;
+            text-align: center;
+        }
+        .file:hover{
+            animation: boing 0.3s ease-in-out;
+        }
+        @keyframes boing {
+            50%{
+                transform: translateY(-10px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Фото и видео нашей работы</h1>
+    </header>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="events.html">Мероприятия</a>
+        <a href="pdd.html">ПДД для детей</a>
+        <a href="gallery.html">Галерея</a>
+    </nav>
+    <div class="container">
+        <div class="gallery">
+            <div class="file-container">
+                <div class="file">
+                    <img src="Images/archive_image.png">
+                    <a href="InformationFiles/Внимание_дети.zip">Акция "Внимание, дети!"</a>
+                </div>
+                <div class="file">
+                    <img src="Images/archive_image.png">
+                    <a href="InformationFiles/Безопасное_Колесо.zip">Районный конкурс "Безопасное колесо"</a>
+                </div>
+                <div class="file">
+                    <img src="Images/archive_image.png">
+                    <a href="InformationFiles/Дорожный_Лабиринт.zip">Квест "Дорожный лабиринт"</a>
+                </div>
+                <div class="file">
+                    <img src="Images/archive_image.png">
+                    <a href="InformationFiles/ЮИД и день здоровья.zip">День здоровья с ЮИД: "Безопасность + Здоровье = Успех!</a>
+                </div>
+                <div class="file">
+                    <img src="Images/archive_image.png">
+                    <a href="InformationFiles/Двухколёсный_Друг.zip">Велосипедный праздник: "Двухколёсный друг"</a>
+                </div>
+                <div class="file">
+                    <img src="Images/archive_image.png">
+                    <a href="InformationFiles/Светофор.zip">Игра "Светофор" (для младших классов)</a>
+                </div>
+                <div class="file">
+                    <img src="Images/archive_image.png">
+                    <a href="InformationFiles/Я_инспектор_ГИБДД.zip">Ролевая игра "Я — инспектор ГИБДД"</a>
+                </div>
+        </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Клуб ЮИД Школы №140 | Контакты: school140-uid@example.com
+    </footer>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клуб ЮИД Школы №140 | Главная</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #1b5e20;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            margin-bottom: 60px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .welcome-section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .welcome-section h2 {
+            color: #2e7d32;
+            border-bottom: 2px solid #2e7d32;
+            padding-bottom: 10px;
+        }
+        .history-timeline {
+            position: relative;
+            padding-left: 30px;
+            margin: 20px 0;
+        }
+        .history-timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: #2e7d32;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #ccc;
+        }
+        .timeline-item:last-child {
+            border-bottom: none;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -33px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #1b5e20;
+            border: 3px solid #2e7d32;
+        }
+        .timeline-year {
+            font-weight: bold;
+            color: #1b5e20;
+        }
+        .achievements {
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-left: 4px solid #2e7d32;
+            margin: 20px 0;
+        }
+        .news {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .news-item {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            width: 30%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .news-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Клуб Юных Инспекторов Движения Школы №140</h1>
+    </header>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="events.html">Мероприятия</a>
+        <a href="pdd.html">ПДД для детей</a>
+        <a href="gallery.html">Галерея</a>
+    </nav>
+    <div class="container">
+        <div class="welcome-section">
+            <h2>Добро пожаловать в клуб ЮИД "Импульс"!</h2>
+            <p>Мы - команда юных инспекторов движения школы №140. Наша миссия — обучать детей правилам дорожного движения и безопасности на дорогах.</p>
+            
+            <div class="history-timeline">
+                <div class="timeline-item">
+                    <span class="timeline-year">1994 год</span> - Открытие новой современной школы на поселке М.Горького №140. С первых дней работы организован отряд юных инспекторов движения под руководством заместителя директора по воспитательной работе Борисовой Елены Вячеславовны. Первая победа на смотре-конкурсе агитколлективов ЮИД «Светофор».
+                </div>
+                
+                <div class="timeline-item">
+                    <span class="timeline-year">1994-2003</span> - Работа отряда ЮИД в количестве 10-15 человек. За эти годы более 100 ребят приняли участие в юидовском движении.
+                </div>
+                
+                <div class="timeline-item">
+                    <span class="timeline-year">2003 год</span> - В школу пришла новый педагог Пахнутова Оксана Викторовна, учитель ОБЖ. К октябрю число юидовцев увеличилось до 30 человек.
+                </div>
+                
+                <div class="timeline-item">
+                    <span class="timeline-year">2004 год</span> - Отряд ЮИД реорганизован в клуб. Юидовским движением увлеклись и взрослые, и дети.
+                </div>
+            </div>
+            
+            <div class="achievements">
+                <h3>Наши достижения:</h3>
+                <p>• Ежегодные победы на районных, городских и областных соревнованиях «Светофор» и «Безопасное колесо»</p>
+                <p>• Дважды (2007 и 2009гг) команда представляла Волгоградскую область на Российских соревнованиях «Безопасное колесо»</p>
+                <p>• Участие в Межгосударственных и Всероссийских слётах ЮИД</p>
+                <p>• Получение гранта по ФЦП «Повышение БДД в 2009-2012 годах» с приобретением нового оборудования</p>
+            </div>
+            
+            <p>Сегодня клуб ЮИД «Импульс» - это современное объединение со своим Уставом и традициями, где более 60 человек активно занимаются пропагандой правил дорожного движения среди детей и подростков.</p>
+        </div>
+        
+        <h2>Последние новости</h2>
+        <div class="news">
+            <div class="news-item">
+                <img src="Images/IMG_0441.jpg">
+                <h3>Акция "Внимание, дети!"</h3>
+                <p>Мы провели уроки безопасности для начальных классов.</p>
+            </div>
+            <div class="news-item">
+                <img src="Images/IMG_1111.png">
+                <h3>Районный конкурс "Безопасное колесо"</h3>
+                <p>Наша команда заняла 2 место! Поздравляем!</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Клуб ЮИД Школы №140 | Контакты: school140-uid@example.com
+    </footer>
+</body>
+</html>

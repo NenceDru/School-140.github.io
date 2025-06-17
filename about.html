@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас | Клуб ЮИД Школы №140</title>
+    <style>
+        /* Общие стили (как в index.html) */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #1b5e20;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            margin-bottom: 60px;
+        }
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .team-member {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            width: 40%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .team-member img {
+            width: 600px;
+            height: 250px;
+            border-radius: 25px;
+            object-fit: cover;
+        }
+        footer {
+            background-color: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .file-container {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+        }
+        .file {
+            background-color: #35a73b;
+            width: 200px;
+            height: 170px;
+            display: grid;
+            grid-template-rows: 2fr 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .file img {
+            width: 100px;
+            height: 120px;
+            margin-left: 30px;
+        }
+        .file a {
+            font-size: 25px;
+            color: aliceblue;
+            text-align: center;
+        }
+        .file:hover{
+            animation: boing 0.3s ease-in-out;
+        }
+        @keyframes boing {
+            50%{
+                transform: translateY(-10px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>О нашем клубе</h1>
+    </header>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="events.html">Мероприятия</a>
+        <a href="pdd.html">ПДД для детей</a>
+        <a href="gallery.html">Галерея</a>
+    </nav>
+    <div class="container">
+        <h2>Наша история</h2>
+        <div class="file-container">
+            <div class="file">
+                <img src="Images/file_icon.png">
+                <a href="InformationFiles/инфо импульс.docx">Инфо Импульс</a>
+            </div>
+            <div class="file">
+                <img src="Images/file_icon.png">
+                <a href="InformationFiles/Информация об отряде ЮИД.doc">Информация об отряде ЮИД</a>
+            </div>
+            <div class="file">
+                <img src="Images/file_icon.png">
+                <a href="InformationFiles/ГИМН ЮИД.docx">ГИМН ЮИД</a>
+            </div>
+            <div class="file">
+                <img src="Images/music Icon.png">
+                <a href="InformationFiles/Гимн ЮИД.mp3">Гимн ЮИД</a>
+            </div>
+            <div class="file">
+                <img src="Images/file_icon.png">
+                <a href="InformationFiles/ИСТОРИЯ ЮИД.doc">ИСТОРИЯ ЮИД</a>
+            </div>
+        </div>
+        <h2>Наша команда</h2>
+        <div class="team">
+            <div class="team-member">
+                <img src="https://cdn.discordapp.com/attachments/1321978219406164031/1384521652263583786/IMG_0435.jpg?ex=6852bbc5&is=68516a45&hm=4606a883e91d5ec3e1ff847488cbe1b69853d1456ccabf0ba18a81049db770fb&?text=Руководитель" alt="Руководитель">
+                <h3>Импульс</h3>
+                <p>Полный состав команды с руководителем</p>
+            </div>
+            <!-- <div class="team-member">
+                <img src="https://via.placeholder.com/150?text=Капитан" alt="Капитан">
+                <h3>Сергеев Алексей</h3>
+                <p>Капитан команды</p>
+            </div> -->
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Клуб ЮИД Школы №140 | Контакты: school140-uid@example.com
+    </footer>
+</body>
+</html>
